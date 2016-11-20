@@ -17,10 +17,11 @@
     <packaging>pom</packaging>
     
     <properties>
-        <dubbo.version>2.5.3</dubbo.version>
-        <spring_version>4.1.6.RELEASE</spring_version>
+        <dubbo.version>2.8.4</dubbo.version>
+        <spring_version>3.2.9.RELEASE</spring_version>
+        <zookeeper.version>3.4.6</zookeeper.version>
         <servlet_version>2.5</servlet_version>
-	    <lucene_version>5.3.0</lucene_version>
+        <lucene_version>5.3.0</lucene_version>
         <findbugs.excludeFilterFile>findbugs-exclude.xml</findbugs.excludeFilterFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <common.io.version>2.2</common.io.version>
@@ -29,7 +30,6 @@
         <commons.lang.version>2.6</commons.lang.version>
         <fastjson.version>1.1.41</fastjson.version>
         <zk.version>0.1</zk.version>
-        <zookeeper.version>3.3.3</zookeeper.version>
         <logback.version>1.1.2</logback.version>
         <disruptor.version>3.3.4</disruptor.version>
     </properties>
@@ -164,6 +164,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
+            <version>${spring_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
             <version>${spring_version}</version>
         </dependency>
 
